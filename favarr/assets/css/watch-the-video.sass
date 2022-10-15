@@ -232,14 +232,18 @@ $purple: #662483
 // hero start
     // hero section starts
 .hero
+    height: 90vh
     background: $purple
-    overflow-x: hidden
+    overflow: hidden
     font-family: 'Assistant'
+    &--container
+        position: relative
     &__header
         &__heading
+            font-family: "Assistant"
             font-size: 120px
             font-weight: 700
-            line-height: 105px
+            line-height: 103px
             white-space: nowrap
             letter-spacing: 1.32px
     &__play__link
@@ -250,229 +254,145 @@ $purple: #662483
         &:hover
             color: $golden
     &__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
         &--img
-            width: 860px
-            margin-left: -150px
+            width: 1350px
             position: absolute
-            top: -100px
-            right: -100px
+            bottom: -223px
+            right: -558px
 
+@media only screen and (height: 720px)
+    .hero
+        height: 630px !important
+@media only screen and (min-height: 831px)
+    .hero
+        height: 894px
+@media only screen and (min-width: 1677px)
+    .hero__right--img
+        width: 1982px
+        bottom: -292px
+        right: -762px
 @media only screen and (min-width: 1400px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
     .hero__right--img
-        width: 1000px
-        margin-left: -245px
+        width: 1982px
+        bottom: -292px
+        right: -762px
 @media only screen and (min-width: 1472px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
     .hero__right--img
-        width: 1579px
-        margin-left: -337px
-        margin-top: -61px
-@media only screen and (max-width: 1290px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
-    .hero__right--img
-        width: 830px
-        margin-left: -150px
-@media only screen and (max-width: 1270px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
-    .hero__right--img
-        width: 800px
-        margin-left: -150px
+        width: 1982px
+        bottom: -292px
+        right: -847px
+@media only screen and (max-width: 1366px)
     .hero__header__heading
-        font-size: 70px
-@media only screen and (max-width: 1200px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
+        font-size: 88px
+        line-height: 75px
+@media only screen and (max-width: 1290px)
     .hero__right--img
-        width: 750px
-        margin-left: -150px
+        width: 1333px
+        bottom: -197px
+        right: -544px
+@media only screen and (min-width: 1270px) and (max-width: 1270px)
+    .hero__right--img
+        width: 1333px
+        bottom: -197px
+        right: -500px
+@media only screen and (max-width: 1200px)
+    .hero__right--img
+        width: 1333px
+        bottom: -197px
+        right: -500px
     .hero__header__heading
         font-size: 62px
+        line-height: 60px
 @media only screen and (max-width: 1120px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
     .hero__right--img
-        width: 700px
-        margin-left: -130px
+        width: 1333px
+        bottom: -197px
+        right: -500px
     .hero__header__heading
         font-size: 58px
+        line-height: 55px
 @media only screen and (max-width: 1024px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
     .hero__right--img
-        width: 600px
-        margin-left: -100px
+        width: 1333px
+        bottom: -197px
+        right: -500px
     .hero__header__heading
         font-size: 55px
         line-height: 55px
 @media only screen and (max-width: 991px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
+    .hero
+        height: 637px
     .hero__right--img
-        width: 1707px
-        margin-left: 188px
-        margin-top: -220px
-    .hero__header__heading
-        font-size: 78px
-        line-height: 55px
-@media only screen and (max-width: 693px)
+        width: 1333px
+        bottom: -250px
+        right: -500px
+@media only screen and (max-width: 866px)
     .hero__right--img
-        width: 1463px
-        margin-top: -251px
-    .hero__header__heading
-        font-size: 62px
-        line-height: 47px
-        position: relative
-        margin-left: 26px
-        margin-top: 17px
-@media only screen and (max-width: 660px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
+        width: 1333px
+        bottom: -245px
+        right: -500px
+@media only screen and (max-width: 768px)
+    .hero
+        height: 748px
     .hero__right--img
-        width: 1528px
-        margin-top: -236px
+        width: 1333px
+        bottom: -250px
+        right: -500px
+    .hero__header
+        position: absolute
+        top: 27px
+        left: 0
+        z-index: 9
     .hero__header__heading
         font-size: 60px
-        line-height: 40px
-        margin-left: 16px
-        margin-top: 17px
+        line-height: 55px
 @media only screen and (max-width: 567px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
     .hero__right--img
-        width: 1528px
-        margin-top: -236px
-    .hero__header__heading
-        font-size: 52px
+        width: 1333px
+        bottom: -250px
+        right: -500px
     .hero__play__link
         font-size: 20px
 @media only screen and (max-width: 520px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
     .hero__right--img
-        width: 1528px
-        margin-top: -236px
+        width: 1333px
+        bottom: -250px
+        right: -500px
     .hero__header__heading
         font-size: 50px
     .hero__play__link
         font-size: 20px
 @media only screen and (max-width: 485px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
     .hero__right--img
-        width: 1528px
-        margin-top: -236px
+        width: 1333px
+        bottom: -250px
+        right: -500px
     .hero__play__link
         font-size: 20px
         line-height: 25px
-@media only screen and (max-width: 450px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
-    .hero__right--img
-        width: 1358px
-        margin-top: -236px
-        z-index: -100
-        margin-left: 6px
+    .hero__header
+        left: 0px
     .hero__header__heading
         font-size: 50px
-        line-height: 32px
-        z-index: 100
-        position: relative
-        margin-left: -146px
-        margin-top: 18px
+        line-height: 50px
+@media only screen and (max-width: 450px)
+    .hero__right--img
+        width: 1333px
+        bottom: -250px
+        right: -500px
     .hero__play__link
         font-size: 18px
         line-height: 23px
 @media only screen and (max-width: 375px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
     .hero__right--img
-        font-size: 48px
-        line-height: 35px
-        margin-left: 24px
-        margin-top: -228px
-    .hero__header__heading
-        font-size: 48px
-        line-height: 35px
-        margin-left: -127px
-
+        width: 1333px
+        bottom: -250px
+        right: -500px
 @media only screen and (max-width: 340px)
-    .hero__right
-        height: 92vh
-        background-image: url(../../images/video_1.svg)
-        background-repeat: no-repeat
-        background-position-x: 891%
-        background-size: 97%
     .hero__right--img
-        width: 1205px
-        margin-top: -222px
-        z-index: -100
-        margin-left: 6px
+        width: 1333px
+        bottom: -197px
+        right: -500px
     .hero__play__link
         font-size: 16px
         line-height: 20px
@@ -482,15 +402,18 @@ $purple: #662483
     background: $grey
     height: 572px
     &__content
+        overflow: hidden
         &__para
             color: #000000
-            font-size: 32px
+            font-size: 24px
             letter-spacing: 0.14px
             font-family: "Assistant"
             font-weight: 500
-            line-height: 33px
+            line-height: 30px
         &__heading
-            font-size: 62px
+            margin-top: 0px !important
+            font-family: "Assistant"
+            font-size: 60px
             color: $pink
             letter-spacing: 0.79px
             font-weight: 700
@@ -500,37 +423,58 @@ $purple: #662483
         height: 390px
         &--img
             position: absolute
-            width: 1008px
+            width: 1107px
             top: -70px
             right: -93px
-@media only screen and (max-width: 1270px)
+@media only screen and (min-width: 1400px)
+    .Shop__content__heading
+        font-size: 72px
+        margin-top: 0px
+    .Shop__content__para
+        font-size: 34px
+        line-height: 40px
+    .Shop
+        height: 650px
     .Shop__container--img
-        right: -100px
+        width: 1237px
+        right: -150px
+@media only screen and (max-width: 1399px)
+    .Shop__content__para
+        font-size: 22px 
+        line-height: 28px
+    .Shop__container--img
+        width: 985px
+        right: -150px
+    .Shop
+        height: 500px
 @media only screen and (max-width: 1195px)
     .Shop__container
         height: 350px
+@media only screen and (max-width: 1147px)
     .Shop__container--img
-        width: 750px
-@media only screen and (max-width: 1127px)
-    .Shop__container
-        height: 330px
-    .Shop__container--img
-        width: 730px
+        width: 1039px
+        right: -178px
     .Shop
+        height: auto
         padding-right: 30px
+        padding-bottom: 20px
+@media only screen and (max-width: 1026px)
+    .Shop__container--img
+        width: 1103px
+        right: -178px
 @media only screen and (max-width: 991px)
     .Shop
         height: auto
-        padding-right: 0px
         &__content__heading
             margin-top: 0px
-
     .Shop__container
         overflow-x: hidden
         position: static
         height: 530px
         margin-top: 50px
         margin-left: 0px
+        display: flex
+        justify-content: center
     .Shop__container--img
         position: static
         width: 800px
@@ -560,6 +504,9 @@ $purple: #662483
     .Shop__content__para
         font-size: 18px
         line-height: 22px
+    .Shop__content__heading
+        font-size: 55px
+        line-height: 57px
 @media only screen and (max-width: 420px)
     .Shop__container
         height: 320px
@@ -573,11 +520,17 @@ $purple: #662483
         height: 290px
     .Shop__container--img
         width: 450px
+    .Shop__content__heading
+        font-size: 50px
+        line-height: 55px
 @media only screen and (max-width: 340px)
     .Shop__container
         height: 250px
     .Shop__container--img
         width: 400px
+    .Shop__content__heading
+        font-size: 47px
+        line-height: 54px
 @media only screen and (max-width: 300px)
     .Shop__container
         height: 240px
@@ -586,3 +539,204 @@ $purple: #662483
     .Shop__content__para
         font-size: 16px
         line-height: 20px
+    .Shop__content__heading
+        font-size: 45px
+        line-height: 50px
+
+/* promise starts
+.Promise
+    &__content
+        max-width: 800px !important
+    &__detail
+        font-family: 'Assistant'
+        font-size: 20px
+        line-height: 26px
+        &--bold
+            font-weight: bold
+        &--skyblue
+            color: $skyblue
+    &__heading
+        font-family: 'Assistant'
+        color: $blue
+        font-weight: 700
+        font-size: 50px
+        line-height: 55px
+    &__container
+        background: $white
+        &__box
+            max-width: 400px
+            &--img
+                max-width: 400px
+            &__heading
+                font-family: 'Assistant'
+                font-size: 26px
+                font-weight: 700
+                &--pink
+                    color: $pink
+                &--green
+                    color: $green
+                &--blue
+                    color: $blue
+                &--skyblue
+                    color: $skyblue
+                &--purple
+                    color: $purple
+                &--golden
+                    color: $golden
+            &__text
+                font-family: 'Assistant'
+                font-size: 18px
+                line-height: 23px
+@media only screen and (min-width: 1400px)
+    .Promise__heading 
+        font-size: 60px
+        line-height: 65px
+    .Promise__detail
+        font-size: 24px
+        line-height: 30px
+@media only screen and (max-width: 600px)
+    .Promise__heading
+        font-size: 50px
+        line-height: 55px
+@media only screen and (max-width: 546px)
+    .Promise__heading
+        font-size: 45px
+        line-height: 50px
+@media only screen and (max-width: 455px)
+    .Promise__heading
+        font-size: 40px
+        line-height: 45px
+@media only screen and (max-width: 400px)
+    .Promise__heading
+        font-size: 35px
+        line-height: 40px
+
+/* Video 
+.Video
+    &__content
+        max-width: 520px
+        &__para
+            color: $pink
+            font-family: 'Assistant'
+            font-size: 18px
+            line-height: 23px
+            font-weight: 700
+        &__detail
+            color: $pink
+            font-family: 'Assistant'
+            font-size: 18px
+            line-height: 23px
+            color: $black
+    &--iframe
+        width: 100%
+        height: 700px
+@media only screen and (min-width: 1920px)
+    .Video__content
+        max-width: 680px
+    .Video__content__para
+        font-size: 25px
+        line-height: 28px
+    .Video__content__detail
+        font-size: 25px
+        line-height: 35px
+@media only screen and (max-width: 1366px)
+    .Video--iframe
+        height: 500px
+@media only screen and (max-width: 991px)
+    .Video--iframe
+        height: 400px
+@media only screen and (max-width: 565px)
+    .Video--iframe
+        height: 400px
+
+
+/* Join
+.Join
+    background: $white
+    &-dotted
+        border-top: 1px dotted
+    &__content
+        max-width: 560px
+        &__heading
+            color: $pink
+            font-family: 'Assistant'
+            font-weight: 700
+            font-size: 45px
+            line-height: 45px
+        &__para
+            font-family: 'Assistant'
+            font-size: 18px
+            line-height: 23px
+    &__buttons
+        &--1
+            height: 70px !important
+            &--img
+                width: 50px
+            &__text
+                &__heading
+                    font-size: 25px
+                    line-height: 20px
+                &__detail
+                    font-size: 14px
+            &:hover
+                background: $black
+@media only screen and (max-width: 387px)
+    .Join__buttons
+        display: block !important
+
+/*Footer starts
+.Footer
+    background: $home-color
+    &__left
+        &__logo
+            width: 155px
+        &__heading
+            font-family: 'Assistant'
+            font-size: 27px
+            color: $white
+            letter-spacing: 0.4px
+        &__text
+            font-family: 'Assistant'
+            color: $white
+            line-height: 5px
+            font-weight: 200
+            &-bold
+                font-family: 'Assistant'
+                color: $white
+                font-weight: 300
+                font-size: 20px
+    &__socials
+        &--div
+            border: 1px solid $white
+            border-radius: 50%
+            width: 40px
+            height: 40px
+            &__icon
+                font-size: 20px
+    &__menu
+        &__text-bold
+            font-family: 'Assistant'
+            color: $white
+            font-weight: 300
+            font-size: 20px
+        &__list
+            &__item
+                &__link
+                    font-family: 'Assistant'
+                    color: $white
+                    line-height: 5px
+                    font-weight: 200
+    &__copyright
+        &__text
+            color: $white
+            font-family: 'Assistant'
+            font-weight: 200
+            letter-spacing: 0.18px
+            line-height: 15px
+@media only screen and (max-width:575px)
+    .Footer__copyright__text
+        font-size: 14px
+@media only screen and (max-width:425px)
+    .Footer__copyright__text
+        font-size: 12px
+        line-height: 19px
